@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 @RestController
 public class TestLambdaParellelPerformance2 {
 
-    @GetMapping("get1")
+    @GetMapping("get15")
     public String get1(){
         return "hello world";
     }

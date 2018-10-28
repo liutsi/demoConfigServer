@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 @RestController
 public class TestCollect {
 
-    @GetMapping("get1")
+    @GetMapping("get11")
     public String get1(){
         return "hello world";
     }

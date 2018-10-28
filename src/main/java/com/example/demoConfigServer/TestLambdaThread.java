@@ -10,7 +10,7 @@ import java.util.Optional;
 @RestController
 public class TestLambdaThread {
 
-    @GetMapping("get1")
+    @GetMapping("get16")
     public String get1(){
         return "hello world";
     }

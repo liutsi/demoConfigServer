@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 @RestController
 public class TestController3 {
 
-    @GetMapping("get1")
+    @GetMapping("get13")
     public String get1(){
         return "hello world";
     }

@@ -8,7 +8,7 @@ import java.util.*;
 @RestController
 public class TestLambdaParellelPerformance {
 
-    @GetMapping("get1")
+    @GetMapping("get14")
     public String get1(){
         return "hello world";
     }
