@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 @RestController
 public class TestController2 {
 
-    @GetMapping("get123")
+    @GetMapping("get1234")
     public String get1(){
         return "hello world";
     }
