@@ -1,8 +1,11 @@
 package com.example.demoConfigServer;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletResponse;
+import javax.websocket.server.PathParam;
 import java.math.BigInteger;
 import java.util.*;
 import java.util.function.Supplier;
@@ -12,9 +15,10 @@ import java.util.stream.Stream;
 @RestController
 public class TestController {
 
-    @GetMapping("get1")
-    public String get1(){
-        return "hello world";
+    @GetMapping("get18/{id}")
+    public String get1(@PathVariable String id, HttpServletResponse response){
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        return "hello :"+id;
     }
 
     public static void main(String [] args) {
